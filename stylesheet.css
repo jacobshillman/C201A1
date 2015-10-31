@@ -1,0 +1,44 @@
+body {
+  background-color: #887766;
+}
+
+.pics {
+  text-align: center;
+  vertical-align: middle;
+  background-color: #f22929;
+  display: inline-block;
+  float: both;
+}
+
+img {
+  vertical-align: middle;
+  margin: 50px;
+  margin-bottom: 10px;
+}
+
+figcaption {
+  padding: 15px 0px;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 18pt;
+  font-family: Serif;
+}
+
+p {
+  display: inline;
+}
+
+#car {
+  font-size: 14pt;
+  color: #f1f1f1;
+  font-style: bold;
+  font-style: italic;
+  background-color: #887766;
+}
+
+td {
+  vertical-align: text-top;
+  padding: 0px 15px;
+}

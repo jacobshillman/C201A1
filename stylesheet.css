@@ -2,6 +2,10 @@ body {
   background-color: #887766;
 }
 
+#top{
+  padding: 50px 50px;
+}
+
 .pics {
   text-align: center;
   vertical-align: middle;
@@ -21,12 +25,27 @@ figcaption {
   font-style: italic;
 }
 
+h2 {
+  text-align: center;
+}
+
 h3 {
   font-size: 18pt;
   font-family: Serif;
 }
 
-p {
+#lname {
+  margin-left: 1.75px;
+}
+
+#contact {
+  display: block;
+  text-align: right;
+  margin-right: 25%;
+  margin-top: 15px;
+}
+
+.nar {
   display: inline;
 }
 
@@ -42,3 +61,33 @@ td {
   vertical-align: text-top;
   padding: 0px 15px;
 }
+
+fieldset {
+  margin: 15px 5px;
+  border-color: black;
+}
+
+.input {
+  margin: 10px 0px 10px 0px;
+}
+
+#pick {
+  vertical-align: top;
+}
+
+#comment {
+  height: 15em;
+  width: 50em;
+  text-align: left;
+  vertical-align: top;
+}
+
+#sub {
+  text-align: center;
+}
+
+#back {
+  text-align: center;
+  font-size: 12pt;
+}
+

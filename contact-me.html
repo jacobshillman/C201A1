@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Talk to me, Goose!</title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+     <h1 id="top">Ask me anything.</h1>
+    <div class="pics"><div class="pics">
+      <img src="Images/Rude-small.JPG" alt="Me on the roof">
+      <figcaption>...is not asking questions!</figcaption></div>
+    <div class="pics">AND</div>
+    <div class="pics">
+      <img src="Images/GraffitiII-small.JPG" alt="The other me - No, I'm the one in the middle!!">
+      <figcaption>So there!</figcaption>
+    </div></div>
+    <div id="contact"><a href="index.html">Home</a></div>
+      <h2>...no really!! ANYTHING! I'm not saying I won't just make some stuff up...</h2>
+    <h3>Please fill in the required fields to contact me<br>
+        with your questions and comments.
+        <p>Thanks!</p>
+    </h3>
+    <form method="post" action="index.html">
+      <fieldset>
+        <legend>About YOU</legend>
+        First Name: <input type="text" name="fname" value="First Name" required><br>
+        Last Name:  <input type="text" id="lname" name="fname" value="Last Name" required><br>
+        <div class="input">Preferred method of contact:<br>
+          eMail: <input type="radio" name="contact" value="eMail" required>
+          Yell from across the hall: <input type="radio" name="contact" value="Yell " required>
+          Paper airplane note: <input type="radio" name="contact" value="note" required>
+        </div>
+        <div class="input">Email address: <input type="text" name="email" value="email" requried></div>
+      </fieldset>
+      <div class="input">
+        What are you interested in chatting about?: <select id="pick" multiple required>
+          <option value="beers">Beers</option>
+          <option value="arctic windsurfing">Arctic Windsurfing</option>
+          <option value="The meaning of life">The meaning of life</option>
+          <option value="stuff, for the thing">Stuff, for the thing</option>
+          <option value="Things, for the stuff">Things, for the stuff</option>
+        </select>
+      </div>
+      <fieldset>
+        <legend>Comments, Questions, Rants, Raves, etc., etc....</legend>
+        <textarea id="comment" name="comments" maxlength="1000" required>32 bits for your thoughts?</textarea>
+        <div class="input" id="sub"><input type="submit" value="SUBMIT"></div>
+      </fieldset>
+
+    <div id="back"><a href="#top">BACK TO TOP</a></div>
+  </body>
+</html>

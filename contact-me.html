@@ -2,21 +2,20 @@
 
 <html>
   <head>
-    <title>Talk to me, Goose!</title>
+    <title>ME!</title>
     <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <script src="meJS.js" type="text/javascript"></script>
   </head>
   <body>
-     <h1 id="top">Ask me anything.</h1>
-    <div class="pics"><div class="pics">
-      <img src="Images/Rude-small.JPG" alt="Me on the roof">
-      <figcaption>...is not asking questions!</figcaption></div>
-    <div class="pics">AND</div>
-    <div class="pics">
-      <img src="Images/GraffitiII-small.JPG" alt="The other me - No, I'm the one in the middle!!">
-      <figcaption>So there!</figcaption>
-    </div></div>
-    <div id="contact"><a href="index.html">Home</a></div>
-      <h2>...no really!! ANYTHING! I'm not saying I won't just make some stuff up...</h2>
+    <h1 id="top">Contact Me</h1>
+    <nav>
+      <img id="thumb" src="Images/Jake-VA-tiny.jpg" alt="Me on the roof"
+        onMouseOver="bigJake()"
+        onMouseOut="littleJake()">
+      <button type="button"><a href="index.html">Home</a></button>
+      <button type="button"><a href="interests.html">Stuff I like</a></button>
+      <button type="button"><a href="guesgame.html">Game ON!!</a></button>
+    </nav>
     <h3>Please fill in the required fields to contact me<br>
         with your questions and comments.
         <p>Thanks!</p>
@@ -33,7 +32,8 @@
         </div>
         <div class="input">Email address: <input type="text" name="email" value="email" requried></div>
       </fieldset>
-      <div class="input">
+      <fieldset class="input">
+        <legend>Let's chat!??</legend>
         What are you interested in chatting about?: <select id="pick" multiple required>
           <option value="beers">Beers</option>
           <option value="arctic windsurfing">Arctic Windsurfing</option>
@@ -41,13 +41,12 @@
           <option value="stuff, for the thing">Stuff, for the thing</option>
           <option value="Things, for the stuff">Things, for the stuff</option>
         </select>
-      </div>
+      </fieldset>
       <fieldset>
         <legend>Comments, Questions, Rants, Raves, etc., etc....</legend>
         <textarea id="comment" name="comments" maxlength="1000" required>32 bits for your thoughts?</textarea>
         <div class="input" id="sub"><input type="submit" value="SUBMIT"></div>
       </fieldset>
-
     <div id="back"><a href="#top">BACK TO TOP</a></div>
   </body>
 </html>

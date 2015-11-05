@@ -18,7 +18,7 @@ nav {
 
 .pix {
   vertical-align: middle;
-  margin: 10px 20px 10px 0px;
+  padding: 10px 20px 10px 20px;
 }
 
 h3 {
@@ -46,9 +46,10 @@ h3 {
   background-color: #887766;
 }
 
-td {
+.index {
   vertical-align: text-top;
   padding: 0px 15px;
+  width: 45%;
 }
 
     /*Contact Me*/
@@ -87,3 +88,13 @@ fieldset {
   text-align: center;
 }
 
+    /*Interests*/
+.emphasis {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.items {
+  width: 30%;
+  vertical-align: top;
+}

@@ -97,4 +97,5 @@ fieldset {
 .items {
   width: 30%;
   vertical-align: top;
+  padding: 5px 5px;
 }

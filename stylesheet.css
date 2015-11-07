@@ -94,8 +94,30 @@ fieldset {
   font-weight: bold;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 .items {
-  width: 30%;
+  min-width: 335px;
+  max-width: 450px;
   vertical-align: top;
   padding: 5px 5px;
+  border: 2px dashed #998877;
+}
+
+tr:nth-child(even) {
+  background-color: #776655;
+}
+
+.last {
+  min-width: 335px;
+  max-width: 450px;
+  vertical-align: top;
+  padding: 5px 5px;
+  border: 2px dashed #998877;
+}
+
+.wide {
+  margin-left: 10%;
 }

@@ -24,18 +24,18 @@
     <form method="post" action="index.html">
       <fieldset>
         <legend>About YOU</legend>
-        First Name: <input type="text" name="fname" value="First Name" required><br>
-        Last Name:  <input type="text" id="lname" name="fname" value="Last Name" required><br>
+        First Name: <input type="text" name="fname" value="First Name" ><br>
+        Last Name:  <input type="text" id="lname" name="fname" value="Last Name" ><br>
         <div class="input">Preferred method of contact:<br>
-          eMail: <input type="radio" name="contact" value="eMail" required>
-          Yell from across the hall: <input type="radio" name="contact" value="Yell " required>
-          Paper airplane note: <input type="radio" name="contact" value="note" required>
+          eMail: <input type="radio" name="contact" value="eMail" >
+          Yell from across the hall: <input type="radio" name="contact" value="Yell " >
+          Paper airplane note: <input type="radio" name="contact" value="note" >
         </div>
         <div class="input">Email address: <input type="text" name="email" value="email" requried></div>
       </fieldset>
-      <fieldset class="input">
+      <fieldset>
         <legend>Let's chat!??</legend>
-        What are you interested in chatting about?: <select id="pick" multiple required>
+        What are you interested in chatting about?: <select id="pick" multiple >
           <option value="beers">Beers</option>
           <option value="arctic windsurfing">Arctic Windsurfing</option>
           <option value="The meaning of life">The meaning of life</option>
@@ -45,8 +45,9 @@
       </fieldset>
       <fieldset>
         <legend>Comments, Questions, Rants, Raves, etc., etc....</legend>
-        <textarea id="comment" name="comments" maxlength="1000" required>32 bits for your thoughts?</textarea>
-        <div class="input" id="sub"><input type="submit" value="SUBMIT"></div>
+        <textarea id="comment" name="comments" maxlength="1000"  onfocus="today()">32 bits for your thoughts?</textarea>
+        <div class="input" id="DTG">Date: </div>
+        <div class="input" id="sub"><input type="submit" value="SUBMIT" onclick="agree();"></div>
       </fieldset>
     <div id="back"><a href="#top">BACK TO TOP</a></div>
   </body>

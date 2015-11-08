@@ -15,4 +15,13 @@ function littleBobby() {
   document.getElementById("clown").src="Images/Bobby-DUI-tiny.jpg";
 }
 
-//
+//Contact Me:
+function agree() {
+  alert("I agree to the terms and conditions -especially donating my kidney.");
+}
+
+function today() {
+  var dtg = new Date();
+  document.getElementById("DTG").insertAdjacentHTML('beforeend', dtg);
+}
+

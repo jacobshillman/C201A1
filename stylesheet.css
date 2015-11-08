@@ -84,6 +84,10 @@ fieldset {
   vertical-align: top;
 }
 
+#date {
+  padding: 10px;
+}
+
 #sub {
   text-align: center;
 }

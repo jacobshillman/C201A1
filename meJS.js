@@ -25,3 +25,8 @@ function today() {
   document.getElementById("DTG").insertAdjacentHTML('beforeend', dtg);
 }
 
+//Guessing game:
+function dupe() {
+  alert("Play now?");
+  g-g...
+}

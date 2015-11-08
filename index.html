@@ -4,19 +4,19 @@
   <head>
     <title>ME!</title>
     <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <script src="meJS.js" type="text/javascript"></script>
   </head>
   <body>
     <h1 id="top">All about me! (yay.)</h1>
-    <div class="pics"><div class="pics">
-      <img src="Images/Jake-VA-small.jpg" alt="Me on the roof">
-      <figcaption>I say "Hi!"!</figcaption></div>
-    <div class="pics">AKA</div>
-    <div class="pics">
-      <img src="Images/Bobby-DUI-small.jpg" alt="The other me - No, I'm the one in the middle!!">
-      <figcaption>That's me - No!! ...in the middle!!</figcaption>
-    </div></div>
-    <div id="contact"><a href="contact-me.html">Contact Me</a></div>
-    <h1>All about me! (yay.)</h1>
+    <nav>
+      <img class="pix" id="thumb" src="Images/Jake-VA-tiny.jpg" alt="Me on the roof"
+        onMouseOver="bigJake()" onMouseOut="littleJake()">
+      <button type="button"><a href="contact-me.html">Contact Me</a></button>
+      <button type="button"><a href="interests.html">Stuff I like</a></button>
+      <button type="button"><a href="guesgame.html">Game ON!!</a></button>
+      <img class="pix" id="clown" src="Images/Bobby-DUI-tiny.jpg" alt="No, I'm in the middle!!"
+        onMouseOver="bigBobby()" onMouseOut="littleBobby()">
+    </nav>
     <h3>Early life</h3>
       <p class="nar">  I was born, and learned to walk around and talk and stuff. Apparently, I
       was somewhat accident prone - not because I'm clumsy, but because I just didn't
@@ -32,7 +32,7 @@
       <p class="nar">I enjoy reading, sailing, biking, researching stuff, and working on my <span id="car">1965 Mustang</span>. Ultimately (someday...), I hope to be an author. I've had the pleasure of working as a technical writer and also of writing for fun - and I <em>LOVED</em> every second of it! :)
     <table><h3>Stuff I've Done:</h3>
       <tr>
-        <td>
+        <td class="index">
           <dl id="stuff">
             <dt>IT stuff</dt>
               <dd>
@@ -64,7 +64,7 @@
               </dd>
           </dl>
         </td>
-        <td>
+        <td class="index">
           <dl>
             <dt>Maintenance & Construction stuff</dt>
               <dd>

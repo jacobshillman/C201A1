@@ -1,32 +1,24 @@
+    /*Site formats:*/
 body {
   background-color: #887766;
 }
 
-#top{
-  padding: 50px 50px;
+#top {
+  padding: 35px 20px 10px 15px;
+  font-size: 30pt;
 }
 
-.pics {
+nav {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px dashed blue;
+  background-color: #27ce53;
+}
+
+.pix {
   vertical-align: middle;
-  background-color: #f22929;
-  display: inline-block;
-  float: both;
-}
-
-img {
-  vertical-align: middle;
-  margin: 50px;
-  margin-bottom: 10px;
-}
-
-figcaption {
-  padding: 15px 0px;
-  font-style: italic;
-}
-
-h2 {
-  text-align: center;
+  padding: 10px 20px 10px 20px;
 }
 
 h3 {
@@ -34,17 +26,14 @@ h3 {
   font-family: Serif;
 }
 
-#lname {
-  margin-left: 1.75px;
-}
-
-#contact {
-  display: block;
-  text-align: right;
-  margin-right: 25%;
+#back {
+  text-align: center;
+  font-size: 12pt;
   margin-top: 15px;
+  margin-bottom: 25px;
 }
 
+    /*Index:*/
 .nar {
   display: inline;
 }
@@ -57,14 +46,27 @@ h3 {
   background-color: #887766;
 }
 
-td {
+.index {
   vertical-align: text-top;
   padding: 0px 15px;
+  width: 45%;
 }
 
+    /*Contact Me*/
 fieldset {
   margin: 15px 5px;
   border-color: black;
+}
+
+#lname {
+  margin-left: 1.75px;
+}
+
+#contact {
+  display: block;
+  text-align: right;
+  margin-right: 25%;
+  margin-top: 15px;
 }
 
 .input {
@@ -82,12 +84,71 @@ fieldset {
   vertical-align: top;
 }
 
+#date {
+  padding: 10px;
+}
+
 #sub {
   text-align: center;
 }
 
-#back {
-  text-align: center;
-  font-size: 12pt;
+    /*Interests*/
+.emphasis {
+  font-style: italic;
+  font-weight: bold;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+.wide {
+  margin-left: 10%;
+}
+
+tr:nth-child(even) {
+  background-color: #776655;
+}
+
+.items {
+  min-width: 335px;
+  max-width: 450px;
+  vertical-align: top;
+  padding: 5px 5px;
+  border: 2px dashed #998877;
+  position: relative;
+}
+
+.grid {
+    padding: 10px 20px 10px 20px;
+    z-index: 1;
+  }
+
+.right {
+    padding: 10px 20px 10px 20px;
+    z-index: 1;
+  }
+
+.grid:hover {
+  position: absolute;
+  height: 450px;
+  width: auto;
+  z-index: 5;
+}
+
+.right:hover {
+  position: absolute;
+  right: 0;
+  height: 450px;
+  width: auto;
+  z-index: 5;
+}
+
+.last {
+  min-width: 335px;
+  max-width: 450px;
+  vertical-align: top;
+  padding: 5px 5px;
+  border: 2px dashed #998877;
+  position: relative;
+}

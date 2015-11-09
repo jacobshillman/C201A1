@@ -26,7 +26,71 @@ function today() {
 }
 
 //Guessing game:
+var guess = [
+  'dog',
+  'fish',
+  'car',
+  'giraff',
+  'fern',
+  'boat',
+  'house',
+  'coin',
+  'screwdriver',
+  'armchair',
+  'water bottle',
+  'glass',
+  'table',
+  'vase',
+  'spoon',
+  'stairs',
+  'light',
+  'fence',
+  'berries',
+  'lamp',
+  'boot',
+  'coat',
+  'door',
+  'basket',
+  'drawer'];
+
+var hint = [
+  'Snoop ____',
+  'swim like a ____',
+  'you drive one',
+  'long neck',
+  'Where the Red ____ Grows',
+  'floats',
+  'you live in one',
+  'less than a bill',
+  'tool',
+  'comfy',
+  'holds thirst quencher',
+  'you can see through it',
+  'put stuff on it',
+  'for plants',
+  'utensil',
+  'climb them before bed',
+  'stay away from it',
+  'keeps you in, and them out',
+  'natural desert',
+  'helps you see the light',
+  'hiking ____',
+  '____ of arms',
+  'has a knob',
+  'coding JavaScript makes me a _______ case!',
+  'socks go in one'];
+
 function dupe() {
   alert("Play now?");
-  g-g...
+  gg();
 }
+
+function gg() {
+  confirm("Let's play 'What am I thinking!'");
+//  prompt("Guess what I'm thinking!:");
+}
+
+function openNewName() {
+    var nm = prompt("Name");
+    var ph = prompt("Phone Number");
+  };

@@ -9,6 +9,9 @@ function today() {
 }
 
 //Guessing game:
+var userCount = 0;
+var houseCount = 0;
+
 var answer = [
   'dog',
   'fish',
@@ -68,17 +71,31 @@ function dupe() {
   gg();
 }
 
-function gg() {
-  if (confirm("Let's play 'What am I thinking!'")) {;
+function gg() { //1
+  if (confirm("Let's play 'What am I thinking!'")) { //2
     var indexNumber = Math.floor(Math.random()*24); //24 items in hint/answer arrays.
-    var guess = prompt(hint[indexNumber], "Your answer:"); //
-      if (guess.toLowerCase() == answer[indexNumber]) {
-        alert("You so SMART!!");
-
-      }else{
-        alert("The force is WEAK in this one.")
-      }
-    }else{
-      return false;
-    }
-}
+    var guess = prompt(hint[indexNumber], "Your answer:");
+      if (guess.toLowerCase() == answer[indexNumber]) { //3
+        userCount++;
+        var userScored = document.getElementById("userScoreDisplay");
+        userScored.value = userCount;
+          if (confirm("You so SMART!! \n\nPoint for you! \n\n Play again??")) { //4
+            gg();
+          } /*4*/else{ //5
+            return false;
+          } /*5*/;
+  } /*3*/ else{ //6
+        houseCount++;
+        var houseScored = document.getElementById("houseScoreDisplay");
+        houseScored.value = houseCount;
+        if (confirm("The force is WEAK in this one. \n\nPoint for the house!
+            \n\n Play again??")) { //7
+          gg();
+        } /*7*/ else{ //8
+          return false;
+        }/*8*/;
+      }/*6*/;
+  }/*2*/else{ //9
+    return false;
+    }/*9*/;
+} /*1*/;

@@ -249,3 +249,16 @@ tr:nth-child(even) {
 #instr>p {
   margin-left: 2.25em;
 }
+
+#houseScoreDisplay {
+  width: 3em;
+  font-size: default;
+  text-align: center;
+}
+
+#userScoreDisplay {
+  width: 3em;
+  margin-left: .47em;
+  font-size: default;
+  text-align: center;
+}

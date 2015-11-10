@@ -37,7 +37,7 @@ ul {
   position: static;
 }
 
-#navbar #thumb:hover {
+#thumb:hover {
   height: 278px;
   width: auto;
   z-index: 5;
@@ -46,20 +46,22 @@ ul {
 
 #menu1 {
   display: block;
-  display: none;
+  position: static;
  }
 
-.flier1 {
+#flier1 {
   display: block;
   margin: 10px 15px 10px 5px;
+  display: none;
 }
-/*
-#thumb:hover #menu1 {
+
+#menu1 li:hover #flier1 {
   display: block;
-  position: absolute;
-  right: 3em;
+  left: 10em;
+  bottom: 10em;
+  z-index: 5;
 }
-*/
+
 #clown:hover {
   height: 278px;
   width: auto;
@@ -69,20 +71,19 @@ ul {
 
 #menu2 {
   display: block;
-  display: none;
 }
 
-.flier2 {
+#flier2 {
   display: block;
   margin: 10px 15px 10px 5px;
 }
-/*
-#clown:hover #menu2 {
+
+#menu2 li:hover #menu2 {
   display: block;
   position: absolute;
   right: 3em;
 }
-*/
+
 h3 {
   font-size: 18pt;
   font-family: Serif;

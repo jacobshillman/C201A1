@@ -42,7 +42,7 @@ var hint = [
   'you drive one',
   'long neck',
   'Where the Red ____ Grows',
-  'floats',
+  'hole in the water you throw money into',
   'you live in one',
   'less than a bill',
   'tool',
@@ -69,13 +69,16 @@ function dupe() {
 }
 
 function gg() {
-  confirm("Let's play 'What am I thinking!'");
-  var indexNumber = Math.floor(Math.random()*24); //24 items in hint/answer arrays.
-  var guess = prompt(hint[indexNumber], "Your answer:"); //
-  if (guess.toLowerCase() == answer[indexNumber]) {
-    alert("You so SMART!!");
+  if (confirm("Let's play 'What am I thinking!'")) {;
+    var indexNumber = Math.floor(Math.random()*24); //24 items in hint/answer arrays.
+    var guess = prompt(hint[indexNumber], "Your answer:"); //
+      if (guess.toLowerCase() == answer[indexNumber]) {
+        alert("You so SMART!!");
 
-  }else{
-    alert("The force is WEAK in this one.")
-  };
+      }else{
+        alert("The force is WEAK in this one.")
+      }
+    }else{
+      return false;
+    }
 }

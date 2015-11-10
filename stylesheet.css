@@ -1,37 +1,142 @@
+    /*Site formats:*/
 body {
   background-color: #887766;
 }
 
-#top{
-  padding: 50px 50px;
+#content {
+  margin-left: 7.5em;
+  z-index: 1;
 }
 
-.pics {
-  text-align: center;
-  vertical-align: middle;
-  background-color: #f22929;
-  display: inline-block;
-  float: both;
+#top {
+  padding: 35px 20px 10px 15px;
+  font-size: 30pt;
 }
 
-img {
-  vertical-align: middle;
-  margin: 50px;
-  margin-bottom: 10px;
+#navbar {
+  text-align: left;
+  border: 2px dashed blue;
+  background-color: #27ce53;
+  position: fixed;
 }
 
-figcaption {
-  padding: 15px 0px;
-  font-style: italic;
+h4 {
+  margin: 5px 5px;
 }
 
-h2 {
-  text-align: center;
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.pix {
+  height: 50px;
+  width: auto;
+  margin: 10px 15px 10px 5px;
+  display: block;
+  z-index: 1;
+  position: static;
+}
+
+#thumb:hover {
+  height: 278px;
+  width: auto;
+  z-index: 5;
+  display: block;
+}
+
+#thumb {
+  display: block;
+  position: static;
+ }
+
+button {
+ width: 7em;
+}
+
+#flier1 {
+  display: block;
+  margin: 10px 15px 10px 5px;
+  display: none;
+}
+
+#navbar #menu1:hover ul {
+  display: block;
+  position: absolute;
+  left: 10em;
+  top: 15em;
+  z-index: 10;
+  margin: 10px 15px 10px 5px;
+}
+
+#clown {
+  display: block;
+  position: static;
+}
+
+#clown:hover {
+  height: 278px;
+  width: auto;
+  z-index: 5;
+  display: block;
+}
+
+#flier2 {
+  display: block;
+  margin: 10px 15px 10px 5px;
+  display: none;
+}
+
+#navbar #menu2:hover ul {
+  display: block;
+  position: absolute;
+  left: 18em;
+  top: 21em;
+  z-index: 10;
+  margin: 10px 15px 10px 5px;
 }
 
 h3 {
   font-size: 18pt;
   font-family: Serif;
+}
+
+#back {
+  text-align: center;
+  font-size: 12pt;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  display: block;
+  float: both;
+}
+
+.input {
+  margin: 10px 0px 10px 0px;
+}
+
+    /*Index:*/
+.nar {
+  display: inline;
+}
+
+#car {
+  font-size: 14pt;
+  color: #f1f1f1;
+  font-style: bold;
+  font-style: italic;
+  background-color: #887766;
+}
+
+.index {
+  vertical-align: text-top;
+  padding: 0px 15px;
+  width: 45%;
+}
+
+    /*Contact Me*/
+fieldset {
+  margin: 15px 5px;
+  border-color: black;
 }
 
 #lname {
@@ -45,32 +150,6 @@ h3 {
   margin-top: 15px;
 }
 
-.nar {
-  display: inline;
-}
-
-#car {
-  font-size: 14pt;
-  color: #f1f1f1;
-  font-style: bold;
-  font-style: italic;
-  background-color: #887766;
-}
-
-td {
-  vertical-align: text-top;
-  padding: 0px 15px;
-}
-
-fieldset {
-  margin: 15px 5px;
-  border-color: black;
-}
-
-.input {
-  margin: 10px 0px 10px 0px;
-}
-
 #pick {
   vertical-align: top;
 }
@@ -82,12 +161,91 @@ fieldset {
   vertical-align: top;
 }
 
+#date {
+  padding: 10px;
+}
+
 #sub {
   text-align: center;
 }
 
-#back {
-  text-align: center;
-  font-size: 12pt;
+    /*Interests*/
+.emphasis {
+  font-style: italic;
+  font-weight: bold;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+.wide {
+  margin-left: 10%;
+}
+
+tr:nth-child(even) {
+  background-color: #776655;
+}
+
+.items {
+  min-width: 335px;
+  max-width: 450px;
+  vertical-align: top;
+  padding: 5px 5px;
+  border: 2px dashed #998877;
+  position: static;
+  z-index: 1;
+}
+
+.grid {
+    padding: 10px 20px 10px 20px;
+    z-index: 1;
+  }
+
+.right {
+    padding: 10px 20px 10px 20px;
+    z-index: 1;
+  }
+
+.grid:hover {
+  position: absolute;
+  height: 450px;
+  width: auto;
+  z-index: 5;
+}
+
+.right:hover {
+  position: absolute;
+  right: 0;
+  height: 450px;
+  width: auto;
+  z-index: 5;
+}
+
+.last {
+  min-width: 335px;
+  max-width: 450px;
+  vertical-align: top;
+  padding: 5px 5px;
+  border: 2px dashed #998877;
+  position: relative;
+}
+
+    /*Guessing Game:*/
+#game {
+  display: inline-block;
+  float: center;
+  padding-left: 2em;
+  margin-top: 3.75em;
+}
+
+#instr {
+  display: inline-block;
+  width: 20em;
+  float: left;
+  margin-left: 2em;
+}
+
+#instr>p {
+  margin-left: 2.25em;
+}

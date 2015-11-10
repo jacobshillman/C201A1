@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>ME!</title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <script src="meJS.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h1 id="top">All about me! (yay.)</h1>
+    <nav id="navbar">
+      <h4>Navigation:</h4>
+      <ul id="menu1">
+        <li><img class="pix" id="thumb" src="Images/Jake-VA-small.jpg" alt="Me on the roof"></li>
+          <ul id="flier1">
+            <li><button type="button"><a href="index.html">Home</a></button></li>
+            <li><button type="button"><a href="interests.html">Stuff I like</a></button></li>
+            <li><button type="button"><a href="contact-me.html">Contact Me</a></button></li>
+          </ul>
+      </ul>
+      <ul  id="menu2">
+        <li><img class="pix" id="clown" src="Images/Bobby-DUI-small.jpg" alt="No, I'm in the middle!!"></li>
+          <ul id="flier2">
+            <li><button type="button"><a href="g-g.html">Game ON!!</a></button></li>
+          </ul>
+      </ul>
+    </nav>
+    <div id="content">
+      <h3>'Would you like to play a game?'</h3>
+      <div id="instr">
+        <h4>Instructions:</h4>
+        <p>It's a simple guessing game: You guess what I'm thinking.<br>You get a hint upfront, and one guess.<br>I know - it's like the big leagues...</p>
+      </div>
+      <form id="game">
+        <input class="input" type="button" onclick="gg()" value="I'll be your Huckleberry."><br>
+        <input class="input" type="button" onclick="dupe()" value="No, thanks."><br>
+      </form>
+    </div> <!--ID=content-->
+    <div id="back"><a href="#top">BACK TO TOP</a></div>
+  </body>
+</html>

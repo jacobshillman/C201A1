@@ -9,46 +9,53 @@
   <body>
     <h1 id="top">Contact Me</h1>
     <nav>
-      <img class="pix" id="thumb" src="Images/Jake-VA-tiny.jpg" alt="Me on the roof"
-        onMouseOver="bigJake()" onMouseOut="littleJake()">
-      <button type="button"><a href="index.html">Home</a></button>
-      <button type="button"><a href="interests.html">Stuff I like</a></button>
-      <button type="button"><a href="g-g.html">Game ON!!</a></button>
-      <img class="pix" id="clown" src="Images/Bobby-DUI-tiny.jpg" alt="No, I'm in the middle!!"
-        onMouseOver="bigBobby()" onMouseOut="littleBobby()">
+      <h5>Navigation:</h5>
+      <img class="pix" id="thumb" src="Images/Jake-VA-tiny.jpg" alt="Me on the roof">
+      <div class="menu1">
+        <button type="button" class="flier1"><a href="index.html">Home</a></button>
+        <button type="button" class="flier1"><a href="interests.html">Stuff I like</a></button>
+        <button type="button" class="flier1"><a href="contact-me.html">Contact Me</a></button>
+      </div>
+      <img class="pix" id="clown" src="Images/Bobby-DUI-tiny.jpg" alt="No, I'm in the middle!!">
+      <div class="menu2">
+        <button type="button" class="flier2"><a href="g-g.html">Game ON!!</a></button>
+      </div>
     </nav>
+    <div id="content">
     <h3>Please fill in the required fields to contact me<br>
         with your questions and comments.
         <p>Thanks!</p>
     </h3>
-    <form method="post" action="index.html">
-      <fieldset>
-        <legend>About YOU</legend>
-        First Name: <input type="text" name="fname" value="First Name" ><br>
-        Last Name:  <input type="text" id="lname" name="fname" value="Last Name" ><br>
-        <div class="input">Preferred method of contact:<br>
-          eMail: <input type="radio" name="contact" value="eMail" >
-          Yell from across the hall: <input type="radio" name="contact" value="Yell " >
-          Paper airplane note: <input type="radio" name="contact" value="note" >
-        </div>
-        <div class="input">Email address: <input type="text" name="email" value="email" requried></div>
-      </fieldset>
-      <fieldset>
-        <legend>Let's chat!??</legend>
-        What are you interested in chatting about?: <select id="pick" multiple >
-          <option value="beers">Beers</option>
-          <option value="arctic windsurfing">Arctic Windsurfing</option>
-          <option value="The meaning of life">The meaning of life</option>
-          <option value="stuff, for the thing">Stuff, for the thing</option>
-          <option value="Things, for the stuff">Things, for the stuff</option>
-        </select>
-      </fieldset>
-      <fieldset>
-        <legend>Comments, Questions, Rants, Raves, etc., etc....</legend>
-        <textarea id="comment" name="comments" maxlength="1000"  onfocus="today()">32 bits for your thoughts?</textarea>
-        <div class="input" id="DTG">Date: </div>
-        <div class="input" id="sub"><input type="submit" value="SUBMIT" onclick="agree();"></div>
-      </fieldset>
+      <form method="post" action="index.html">
+        <fieldset>
+          <legend>About YOU</legend>
+          First Name: <input type="text" name="fname" value="First Name" ><br>
+          Last Name:  <input type="text" id="lname" name="fname" value="Last Name" ><br>
+          <div class="input">Preferred method of contact:<br>
+            eMail: <input type="radio" name="contact" value="eMail" >
+            Yell from across the hall: <input type="radio" name="contact" value="Yell " >
+            Paper airplane note: <input type="radio" name="contact" value="note" >
+          </div>
+          <div class="input">Email address: <input type="text" name="email" value="email" requried></div>
+        </fieldset>
+        <fieldset>
+          <legend>Let's chat!??</legend>
+          What are you interested in chatting about?: <select id="pick" multiple >
+            <option value="beers">Beers</option>
+            <option value="arctic windsurfing">Arctic Windsurfing</option>
+            <option value="The meaning of life">The meaning of life</option>
+            <option value="stuff, for the thing">Stuff, for the thing</option>
+            <option value="Things, for the stuff">Things, for the stuff</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Comments, Questions, Rants, Raves, etc., etc....</legend>
+          <textarea id="comment" name="comments" maxlength="1000"  onfocus="today()">32 bits for your thoughts?</textarea>
+          <div class="input" id="DTG">Date: </div>
+          <div class="input" id="sub"><input type="submit" value="SUBMIT" onclick="agree();"></div>
+        </fieldset>
+      </form>
+    </div> <!--ID=content-->
     <div id="back"><a href="#top">BACK TO TOP</a></div>
   </body>
 </html>

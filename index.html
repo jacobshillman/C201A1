@@ -8,92 +8,98 @@
   </head>
   <body>
     <h1 id="top">All about me! (yay.)</h1>
-    <nav>
-      <img class="pix" id="thumb" src="Images/Jake-VA-tiny.jpg" alt="Me on the roof"
-        onMouseOver="bigJake()" onMouseOut="littleJake()">
-      <button type="button"><a href="contact-me.html">Contact Me</a></button>
-      <button type="button"><a href="interests.html">Stuff I like</a></button>
-      <button type="button"><a href="g-g.html">Game ON!!</a></button>
-      <img class="pix" id="clown" src="Images/Bobby-DUI-tiny.jpg" alt="No, I'm in the middle!!"
-        onMouseOver="bigBobby()" onMouseOut="littleBobby()">
+    <nav id="navbar">
+      <h4>Navigation:</h4>
+      <img class="pix" id="thumb" src="Images/Jake-VA-small.jpg" alt="Me on the roof">
+      <ul id="menu1">
+        <li><button type="button" class="flier1"><a href="index.html">Home</a></button></li>
+        <li><button type="button" class="flier1"><a href="interests.html">Stuff I like</a></button></li>
+        <li><button type="button" class="flier1"><a href="contact-me.html">Contact Me</a></button></li>
+      </ul>
+      <img class="pix" id="clown" src="Images/Bobby-DUI-small.jpg" alt="No, I'm in the middle!!">
+      <ul id="menu2">
+        <li><button type="button" class="flier2"><a href="g-g.html">Game ON!!</a></button></li>
+      </ul>
     </nav>
-    <h3>Early life</h3>
-      <p class="nar">  I was born, and learned to walk around and talk and stuff. Apparently, I
-      was somewhat accident prone - not because I'm clumsy, but because I just didn't
-      have any fear. ...aand growing up outside of Casper, WYO there were plenty of
-      things to not have any fear of.  :)</p>
-    <h3>Not so early life</h3>
-      <p class="nar">  Grade school, junior high and high school were, well: school. I worked my
-      way through <a href="http://www.csub.edu">California State University, Bakersfield</a> for a triple BA in English, Philosophy and Psychology. I did manage to keep school from getting in the way of my education, though; and participated in several clubs, student government and Greek life. Ultimately, I found what I wanted to do when I grew up: research in <a href="http://en.wikipedia.org/wiki/Cognitive_neuroscience">Cognitive Neuroscience.</a></p>
-    <h3>Post college</h3>
-      <p class="nar">  After finishing my BA, I began a MA in Psychology with an emphasis in Cognitive Neuroscience, specializing in the electrophysiological correlates of visual consciousness and attention. During the second term of my program, I was deployed for the invasion of Iraq. Apparently, war and graduate school have a long-lasting aversion, so I completed all but the thesis for my MA.</p>
-      <p class="nar">  Since then I've been formally trained in IT, deployed a second time, became a technical writer and, most recently, an electronics maintenance person. See below for a longer list of the <a href="#stuff">Stuff I've Done</a>. However, the best and most important thing I've done is find and marry my wonderful wife. :)</p>
-    <h3>My favorites</h3>
-      <p class="nar">I enjoy reading, sailing, biking, researching stuff, and working on my <span id="car">1965 Mustang</span>. Ultimately (someday...), I hope to be an author. I've had the pleasure of working as a technical writer and also of writing for fun - and I <em>LOVED</em> every second of it! :)
-    <table><h3>Stuff I've Done:</h3>
-      <tr>
-        <td class="index">
-          <dl id="stuff">
-            <dt>IT stuff</dt>
-              <dd>
-                <ul>
-                  <li>Javascript & jQuery, October 2015</li>
-                  <li>HTML & CSS, October 2015</li>
-                  <li>CCNA, June 2010</li>
-                  <li>Windows XP, June 2010</li>
-                  <li>Windows Server 2003, June 2010<br>
-                     with Enhanced Environment & Active Directory</li>
-                  <li>Exchange Server, June 2010</li>
-                  <li>Security+, June 2010</li>
-                  <li>Network+, June 2010</li>
-                  <li>Microsoft Office 1997-2007</li>
-                  <li>A+, August 2008</li>
-                  <li>User / technical support, September 2000-December 2004</li>
-                </ul>
-              </dd>
-            <dt>Military stuff</dt>
-              <dd>
-                <ul>
-                  <li>Information Technology Specialist Advanced Leader Course, March-June 2010</li>
-                  <li>Information Technology Specialist, March-August 2008</li>
-                  <li>Civil Information Management/Asymmetric Software Kit, December 2007</li>
-                  <li>Small Group Instructor Training Course, November 2007</li>
-                  <li>Army Basic Instructor Course, October 2007</li>
-                  <li>Basic Noncommissioned Officer Course, Common Core, February 2007</li>
-                </ul>
-              </dd>
-          </dl>
-        </td>
-        <td class="index">
-          <dl>
-            <dt>Maintenance & Construction stuff</dt>
-              <dd>
-                <ul>
-                  <li>Fire alarm inspection, testing & maintenance</li>
-                  <li>Pneumatic tube system maintenance</li>
-                  <li>Nurse call and code blue maintenance</li>
-                  <li>Crane rigger and operator</li>
-                  <li>Forklift operator</li>
-                  <li>Welder's Helper</li>
-                </ul>
-              </dd>
-            <dt>Random stuff</dt>
-              <dd>
-                <ul>
-                  <li>Electronics assembly & troubleshooting</li>
-                  <li>Technical Writing</li>
-                  <li>Technical Editor</li>
-                  <li>Army truck driver</li>
-                  <li>Army cook</li>
-                  <li>Interior design</li>
-                  <li>Manufacturing</li>
-                  <li>Security</li>
-                </ul>
-              </dd>
-          </dl>
-        </td>
-      </tr>
-    </table>
+    <div id="content">
+      <h3>Early life</h3>
+        <p class="nar">  I was born, and learned to walk around and talk and stuff. Apparently, I
+        was somewhat accident prone - not because I'm clumsy, but because I just didn't
+        have any fear. ...aand growing up outside of Casper, WYO there were plenty of
+        things to not have any fear of.  :)</p>
+      <h3>Not so early life</h3>
+        <p class="nar">  Grade school, junior high and high school were, well: school. I worked my
+        way through <a href="http://www.csub.edu">California State University, Bakersfield</a> for a triple BA in English, Philosophy and Psychology. I did manage to keep school from getting in the way of my education, though; and participated in several clubs, student government and Greek life. Ultimately, I found what I wanted to do when I grew up: research in <a href="http://en.wikipedia.org/wiki/Cognitive_neuroscience">Cognitive Neuroscience.</a></p>
+      <h3>Post college</h3>
+        <p class="nar">  After finishing my BA, I began a MA in Psychology with an emphasis in Cognitive Neuroscience, specializing in the electrophysiological correlates of visual consciousness and attention. During the second term of my program, I was deployed for the invasion of Iraq. Apparently, war and graduate school have a long-lasting aversion, so I completed all but the thesis for my MA.</p>
+        <p class="nar">  Since then I've been formally trained in IT, deployed a second time, became a technical writer and, most recently, an electronics maintenance person. See below for a longer list of the <a href="#stuff">Stuff I've Done</a>. However, the best and most important thing I've done is find and marry my wonderful wife. :)</p>
+      <h3>My favorites</h3>
+        <p class="nar">I enjoy reading, sailing, biking, researching stuff, and working on my <span id="car">1965 Mustang</span>. Ultimately (someday...), I hope to be an author. I've had the pleasure of working as a technical writer and also of writing for fun - and I <em>LOVED</em> every second of it! :)</p>
+      <table><h3>Stuff I've Done:</h3>
+        <tr>
+          <td class="index">
+            <dl id="stuff">
+              <dt>IT stuff</dt>
+                <dd>
+                  <ul>
+                    <li>Javascript & jQuery, October 2015</li>
+                    <li>HTML & CSS, October 2015</li>
+                    <li>CCNA, June 2010</li>
+                    <li>Windows XP, June 2010</li>
+                    <li>Windows Server 2003, June 2010<br>
+                       with Enhanced Environment & Active Directory</li>
+                    <li>Exchange Server, June 2010</li>
+                    <li>Security+, June 2010</li>
+                    <li>Network+, June 2010</li>
+                    <li>Microsoft Office 1997-2007</li>
+                    <li>A+, August 2008</li>
+                    <li>User / technical support, September 2000-December 2004</li>
+                  </ul>
+                </dd>
+              <dt>Military stuff</dt>
+                <dd>
+                  <ul>
+                    <li>Information Technology Specialist Advanced Leader Course, March-June 2010</li>
+                    <li>Information Technology Specialist, March-August 2008</li>
+                    <li>Civil Information Management/Asymmetric Software Kit, December 2007</li>
+                    <li>Small Group Instructor Training Course, November 2007</li>
+                    <li>Army Basic Instructor Course, October 2007</li>
+                    <li>Basic Noncommissioned Officer Course, Common Core, February 2007</li>
+                  </ul>
+                </dd>
+            </dl>
+          </td>
+          <td class="index">
+            <dl>
+              <dt>Maintenance & Construction stuff</dt>
+                <dd>
+                  <ul>
+                    <li>Fire alarm inspection, testing & maintenance</li>
+                    <li>Pneumatic tube system maintenance</li>
+                    <li>Nurse call and code blue maintenance</li>
+                    <li>Crane rigger and operator</li>
+                    <li>Forklift operator</li>
+                    <li>Welder's Helper</li>
+                  </ul>
+                </dd>
+              <dt>Random stuff</dt>
+                <dd>
+                  <ul>
+                    <li>Electronics assembly & troubleshooting</li>
+                    <li>Technical Writing</li>
+                    <li>Technical Editor</li>
+                    <li>Army truck driver</li>
+                    <li>Army cook</li>
+                    <li>Interior design</li>
+                    <li>Manufacturing</li>
+                    <li>Security</li>
+                  </ul>
+                </dd>
+            </dl>
+          </td>
+        </tr>
+      </table>
+    </div> <!--ID=content-->
     <div id="back"><a href="#top">BACK TO TOP</a></div>
   </body>
 </html>

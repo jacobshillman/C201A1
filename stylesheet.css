@@ -3,24 +3,86 @@ body {
   background-color: #887766;
 }
 
+#content {
+  margin-left: 7.5em;
+}
+
 #top {
   padding: 35px 20px 10px 15px;
   font-size: 30pt;
 }
 
 nav {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: left;
   border: 2px dashed blue;
   background-color: #27ce53;
+  position: fixed;
+}
+
+h4 {
+  margin: 5px 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
 }
 
 .pix {
-  vertical-align: middle;
-  padding: 10px 20px 10px 20px;
+  height: 50px;
+  width: auto;
+  margin: 10px 15px 10px 5px;
+  display: block;
+  z-index: 1;
+  position: static;
 }
 
+#navbar #thumb:hover {
+  height: 278px;
+  width: auto;
+  z-index: 5;
+  display: block;
+}
+
+#menu1 {
+  display: block;
+  display: none;
+ }
+
+.flier1 {
+  display: block;
+  margin: 10px 15px 10px 5px;
+}
+/*
+#thumb:hover #menu1 {
+  display: block;
+  position: absolute;
+  right: 3em;
+}
+*/
+#clown:hover {
+  height: 278px;
+  width: auto;
+  z-index: 5;
+  display: block;
+}
+
+#menu2 {
+  display: block;
+  display: none;
+}
+
+.flier2 {
+  display: block;
+  margin: 10px 15px 10px 5px;
+}
+/*
+#clown:hover #menu2 {
+  display: block;
+  position: absolute;
+  right: 3em;
+}
+*/
 h3 {
   font-size: 18pt;
   font-family: Serif;
@@ -31,6 +93,12 @@ h3 {
   font-size: 12pt;
   margin-top: 15px;
   margin-bottom: 25px;
+  display: block;
+  float: both;
+}
+
+.input {
+  margin: 10px 0px 10px 0px;
 }
 
     /*Index:*/
@@ -67,10 +135,6 @@ fieldset {
   text-align: right;
   margin-right: 25%;
   margin-top: 15px;
-}
-
-.input {
-  margin: 10px 0px 10px 0px;
 }
 
 #pick {
@@ -151,4 +215,23 @@ tr:nth-child(even) {
   padding: 5px 5px;
   border: 2px dashed #998877;
   position: relative;
+}
+
+    /*Guessing Game:*/
+#game {
+  display: inline-block;
+  float: center;
+  padding-left: 2em;
+  margin-top: 3.75em;
+}
+
+#instr {
+  display: inline-block;
+  width: 20em;
+  float: left;
+  margin-left: 2em;
+}
+
+#instr>p {
+  margin-left: 2.25em;
 }

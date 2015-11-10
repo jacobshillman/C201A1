@@ -9,20 +9,29 @@
   <body>
     <h1 id="top">All about me! (yay.)</h1>
     <nav>
-      <img class="pix" id="thumb" src="Images/Jake-VA-tiny.jpg" alt="Me on the roof"
-        onMouseOver="bigJake()" onMouseOut="littleJake()">
-      <button type="button"><a href="contact-me.html">Contact Me</a></button>
-      <button type="button"><a href="interests.html">Stuff I like</a></button>
-      <button type="button"><a href="index.html">Home</a></button>
-      <img class="pix" id="clown" src="Images/Bobby-DUI-tiny.jpg" alt="No, I'm in the middle!!"
-        onMouseOver="bigBobby()" onMouseOut="littleBobby()">
+      <h5>Navigation:</h5>
+      <img class="pix" id="thumb" src="Images/Jake-VA-tiny.jpg" alt="Me on the roof">
+      <div class="menu1">
+        <button type="button" class="flier1"><a href="index.html">Home</a></button>
+        <button type="button" class="flier1"><a href="interests.html">Stuff I like</a></button>
+        <button type="button" class="flier1"><a href="contact-me.html">Contact Me</a></button>
+      </div>
+      <img class="pix" id="clown" src="Images/Bobby-DUI-tiny.jpg" alt="No, I'm in the middle!!">
+      <div class="menu2">
+        <button type="button" class="flier2"><a href="g-g.html">Game ON!!</a></button>
+      </div>
     </nav>
-    <h3>'Would you like to play a game?'</h3>
-    <input class="input" type="button" onclick="gg()" value="I'll be your Huckleberry."><br>
-    <input class="input" type="button" onclick="dupe()" value="No, thanks.">
-    <content>
-    <h5>Instructions:</h5>
-    <p>It's a simple guessing game: You guess what I'm thinking. You get a hint upfront, and one guess. I know - it's like the big leagues...
+    <div id="content">
+      <h3>'Would you like to play a game?'</h3>
+      <div id="instr">
+        <h4>Instructions:</h4>
+        <p>It's a simple guessing game: You guess what I'm thinking.<br>You get a hint upfront, and one guess.<br>I know - it's like the big leagues...</p>
+      </div>
+      <form id="game">
+        <input class="input" type="button" onclick="gg()" value="I'll be your Huckleberry."><br>
+        <input class="input" type="button" onclick="dupe()" value="No, thanks."><br>
+      </form>
+    </div> <!--ID=content-->
     <div id="back"><a href="#top">BACK TO TOP</a></div>
   </body>
 </html>

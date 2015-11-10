@@ -1,20 +1,3 @@
-//Swapping images:
-function bigJake() {
-  document.getElementById("thumb").src="Images/Jake-VA-small.jpg";
-}
-
-function littleJake() {
-  document.getElementById("thumb").src="Images/Jake-VA-tiny.jpg";
-}
-
-function bigBobby() {
-  document.getElementById("clown").src="Images/Bobby-DUI-small.jpg";
-}
-
-function littleBobby() {
-  document.getElementById("clown").src="Images/Bobby-DUI-tiny.jpg";
-}
-
 //Contact Me:
 function agree() {
   alert("I agree to the terms and conditions -especially donating my kidney.");
@@ -26,7 +9,7 @@ function today() {
 }
 
 //Guessing game:
-var guess = [
+var answer = [
   'dog',
   'fish',
   'car',
@@ -87,10 +70,12 @@ function dupe() {
 
 function gg() {
   confirm("Let's play 'What am I thinking!'");
-//  prompt("Guess what I'm thinking!:");
-}
+  var indexNumber = Math.floor(Math.random()*24); //24 items in hint/answer arrays.
+  var guess = prompt(hint[indexNumber], "Your answer:"); //
+  if (guess.toLowerCase() == answer[indexNumber]) {
+    alert("You so SMART!!");
 
-function openNewName() {
-    var nm = prompt("Name");
-    var ph = prompt("Phone Number");
+  }else{
+    alert("The force is WEAK in this one.")
   };
+}

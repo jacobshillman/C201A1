@@ -69,33 +69,32 @@ var hint = [
 function dupe() {
   alert("Play now?");
   gg();
-}
+};
 
-function gg() { //1
-  if (confirm("Let's play 'What am I thinking!'")) { //2
+function gg() {
+  if (confirm("Let's play 'What am I thinking!'")) {
     var indexNumber = Math.floor(Math.random()*24); //24 items in hint/answer arrays.
     var guess = prompt(hint[indexNumber], "Your answer:");
-      if (guess.toLowerCase() == answer[indexNumber]) { //3
+      if (guess.toLowerCase() == answer[indexNumber]) {
         userCount++;
         var userScored = document.getElementById("userScoreDisplay");
         userScored.value = userCount;
-          if (confirm("You so SMART!! \n\nPoint for you! \n\n Play again??")) { //4
+          if (confirm("You so SMART!! \n\nPoint for you! \n\n Play again??")) {
             gg();
-          } /*4*/else{ //5
+          } else {
             return false;
-          } /*5*/;
-  } /*3*/ else{ //6
+          };
+  } else {
         houseCount++;
         var houseScored = document.getElementById("houseScoreDisplay");
         houseScored.value = houseCount;
-        if (confirm("The force is WEAK in this one. \n\nPoint for the house!
-            \n\n Play again??")) { //7
+        if (confirm("The force is WEAK in this one.\n\nPoint for the house!\n\n Play again??")) {
           gg();
-        } /*7*/ else{ //8
+        } else{ 
           return false;
-        }/*8*/;
-      }/*6*/;
-  }/*2*/else{ //9
+        };
+      };
+  } else{
     return false;
-    }/*9*/;
-} /*1*/;
+    };
+};
